@@ -5,4 +5,9 @@ interface Chapter {
 	excerpt: string;
 }
 
-export type { Chapter };
+interface Faq {
+	question: string;
+	answer: string;
+}
+
+export type { Chapter, Faq };

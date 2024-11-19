@@ -42,7 +42,7 @@ export const chapters = [
 	}
 ];
 
-const faqs = [
+export const faqs = [
 	{
 		question: "What will I learn from this ebook?",
 		answer:
