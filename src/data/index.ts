@@ -87,7 +87,7 @@ John enjoys exploring Spain’s rich culture and history, fully embracing
 the lifestyle he once dreamed of.
 </p>`;
 
-const textForPaymentSuccess = ` <p class="light-grey mb-s">
+export const textForPaymentSuccess = ` <p class="light-grey mb-s">
     You've made a great decision by choosing this guide to help you on your
     journey to Spain. We’re confident that the insights and advice contained in
     this ebook will save you time, money, and unnecessary stress as you plan
@@ -105,7 +105,7 @@ const textForPaymentSuccess = ` <p class="light-grey mb-s">
     best of luck with your move!
   </p>`;
 
-const textForPaymentFailure = `<p class="light-grey mb-s">
+export const textForPaymentFailure = `<p class="light-grey mb-s">
     We’re sorry, but it looks like there was an issue with your purchase. Don’t
     worry—these things happen, and we're here to help.Please double-check your
     payment details and try again.

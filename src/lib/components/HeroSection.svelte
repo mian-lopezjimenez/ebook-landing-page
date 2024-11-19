@@ -3,7 +3,22 @@
 
   import bookCover from "$assests/book_cover.png";
   import phoneCover from "$assests/phone_cover.png";
+
+  let { children } = $props();
 </script>
+
+{#snippet defaultChildren()}
+  <h1>THIS BOOK WILL</h1>
+  <h1>SAVE YOU MONEY,</h1>
+  <h1 class="mb-m">TIME & NERVES</h1>
+  <p class="light-grey mb-l">
+    I moved to Spain seven years ago. The process was painful and difficult. I 
+    learned most things the hard way: finding a job, getting a visa, 
+    calculating my cost of living, choosing an aparment. That's why I wrote 
+    this e-book, to tell you how I did it. No bullshit, no stress.
+  </p>
+  <Button>purchase e-book for 10$</Button>
+{/snippet}
 
 <section class="hero">
   <div class="hero-showcase text-center bold">
@@ -17,16 +32,11 @@
   </div>
 
   <div class="hero-text white text-center">
-    <h1>THIS BOOK WILL</h1>
-    <h1>SAVE YOU MONEY,</h1>
-    <h1 class="mb-m">TIME & NERVES</h1>
-    <p class="light-grey mb-l">
-      I moved to Spain seven years ago. The process was painful and difficult. I 
-      learned most things the hard way: finding a job, getting a visa, 
-      calculating my cost of living, choosing an aparment. That's why I wrote 
-      this e-book, to tell you how I did it. No bullshit, no stress.
-    </p>
-    <Button>purchase e-book for 10$</Button>
+    {#if children}
+      {@render children()}
+    {:else}
+      {@render defaultChildren()}
+    {/if}
   </div>
 </section>
 
